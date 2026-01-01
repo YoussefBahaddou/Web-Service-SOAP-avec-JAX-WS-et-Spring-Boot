@@ -1,6 +1,6 @@
-package com.example.demo.tp13.entities;
+package com.youssef.soap.service.model;
 
-import com.example.demo.tp13.enums.TypeCompte;
+import com.example.demo.tp13.enums.TypeBankAccount;
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -17,15 +17,15 @@ import java.util.Date;
 @AllArgsConstructor
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Compte {
+public class BankAccount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private double solde;
+    private double balance;
 
     @Temporal(TemporalType.DATE)
-    private Date dateCreation;
+    private Date creationDate;
 
     @Enumerated(EnumType.STRING)
-    private TypeCompte type;
+    private TypeBankAccount type;
 }

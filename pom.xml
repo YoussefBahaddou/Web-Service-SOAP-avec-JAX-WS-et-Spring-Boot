@@ -8,11 +8,11 @@
         <version>3.5.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example.demo</groupId>
-    <artifactId>TP13</artifactId>
+    <groupId>com.youssef.soap</groupId>
+    <artifactId>bank-soap-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>TP13</name>
-    <description>TP13</description>
+    <name>bank-soap-service</name>
+    <description>bank-soap-service</description>
     <url/>
     <licenses>
         <license/>

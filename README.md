@@ -1,4 +1,27 @@
+# Bank SOAP Service
 
+## Overview
+A SOAP Web Service using Apache CXF and Spring Boot.
+Refactored by **Youssef Bahaddou**.
 
-https://github.com/user-attachments/assets/3b1fbf5f-13bb-4132-9f28-adf7a96b2341
+## Features
+- **JAX-WS**: Java API for XML Web Services.
+- **Apache CXF**: Integrated with Spring Boot.
+- **WSDL Generation**: Auto-generated service description.
+
+## Endpoints
+- **WSDL**: \http://localhost:8080/services/BankService?wsdl\
+
+## Operations
+- \getBankAccount(id)\
+- \listAccounts()\
+- \createAccount(balance, type)\
+
+## Run
+\\\ash
+mvn spring-boot:run
+\\\
+
+## Author
+Youssef Bahaddou
 

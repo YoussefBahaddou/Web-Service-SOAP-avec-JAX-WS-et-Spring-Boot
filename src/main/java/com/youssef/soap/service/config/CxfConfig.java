@@ -1,6 +1,6 @@
-package com.example.demo.tp13.config;
+package com.youssef.soap.service.config;
 
-import com.example.demo.tp13.ws.CompteSoapService;
+import com.youssef.soap.service.webservice.*;
 import lombok.AllArgsConstructor;
 import org.apache.cxf.Bus;
 import org.apache.cxf.jaxws.EndpointImpl;
@@ -11,12 +11,12 @@ import org.springframework.context.annotation.Configuration;
 @AllArgsConstructor
 public class CxfConfig {
 
-    private CompteSoapService compteSoapService;
+    private BankAccountSoapService BankAccountSoapService;
     private Bus bus;
 
     @Bean
     public EndpointImpl endpoint() {
-        EndpointImpl endpoint = new EndpointImpl(bus, compteSoapService);
+        EndpointImpl endpoint = new EndpointImpl(bus, BankAccountSoapService);
         endpoint.publish("/ws");
         return endpoint;
     }
